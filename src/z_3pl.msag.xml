@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>Z_3PL</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message class: Close 3PL Deliveries</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_3PL</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_3PL</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Only deliveries with GM status &apos;Not yet processed&apos; (A) can be selected</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_3PL</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Multiple selection not allowed. Please select a single outbound delivery.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_3PL</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Unable to verify if delivery &amp;1 has been closed correctly.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z_3PL</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Multiple selection not allowed. Please select a single inbound delivery.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

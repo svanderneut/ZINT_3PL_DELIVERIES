@@ -1,0 +1,17 @@
+unmanaged implementation in class zbp_r_3pl_deliveries_r unique;
+strict ( 2 );
+
+define behavior for ZR_3PL_Deliveries_R alias OutboundDeliveries
+
+lock master
+authorization master ( instance )
+
+{
+  action closeDelivery result [1] $self;
+
+  side effects {
+    action closeDelivery affects $self, field OverallGoodsMovementStatus, field GoodsMovementStatusCriticality;
+  }
+
+  field ( readonly ) OutboundDelivery;
+}

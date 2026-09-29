@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definiton: 3PL Inbound deliveries'
+define service ZUI_3PL_Inbound_Deliveries_04 {
+  expose ZC_3PL_InboundDelivery_R as InboundDelivery;
+}

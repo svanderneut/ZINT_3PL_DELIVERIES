@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Close 3PL Deliveries",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Close 3PL Deliveries"
+  },
+  "ui5AppDetails": {
+    "appId": "zclose3pldelivery"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_6372CA570A841B8174C33839ED36E31F9308E0A8_TM",
+    "semanticObject": "z3pldelivery",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_6372CA570A841B8174C33839ED36E31F9308E0A8_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Close 3PL Deliveries"
+      }
+    }
+  ]
+}

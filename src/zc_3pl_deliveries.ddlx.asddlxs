@@ -1,0 +1,57 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo: { typeName: '3PL Outbound Delivey',
+                  typeNamePlural: '3PL Outbound Deliveries',
+                  title: { type: #STANDARD, value: 'OutboundDelivery' } }
+
+@UI.presentationVariant: [ { visualizations: [ { type: #AS_LINEITEM } ] } ]
+annotate entity ZC_3PL_Deliveries_R
+    with 
+{
+  @Consumption.semanticObject: 'OutboundDelivery'
+  @UI.facet: [ { id: 'OutboundDelivery',
+                 purpose: #STANDARD,
+                 label: 'Outbound Delivery',
+                 position: 10,
+                 type: #IDENTIFICATION_REFERENCE } ]
+  @UI.lineItem: [ { position: 10, importance: #HIGH },
+                  { type: #FOR_INTENT_BASED_NAVIGATION,
+                    label: 'Display document',
+                    semanticObjectAction: 'displayFactSheet' },
+                  { type: #FOR_ACTION, dataAction: 'closeDelivery', 
+                    label: 'Close 3PL Delivery', 
+                    //invocationGrouping: #CHANGE_SET,
+                    iconUrl: 'sap-icon://reset' } ]
+  @UI.selectionField: [ { position: 10 } ]
+  @UI.identification: [{ position: 10 }] 
+  OutboundDelivery;
+
+  @UI.lineItem: [ { position: 20 } ]
+  @UI.selectionField: [ { position: 20 } ]
+  @UI.identification: [{ position: 20 }]
+  DeliveryDocumentType;
+
+  @UI.lineItem: [ { position: 15 } ]
+  @UI.selectionField: [ { position: 15 } ]
+  @UI.identification: [{ position:15 }]
+  DistrStatusByDecentralizedWrhs;
+
+  @UI.lineItem: [ { position: 30 } ]
+  @UI.selectionField: [ { position: 30 } ]
+  ShippingPoint;
+
+  @UI.lineItem: [ { position: 40 } ]
+  @UI.selectionField: [ { position: 40 } ]
+  ShipToParty;
+
+  @UI.lineItem: [ { position: 50, importance: #HIGH } ]
+  @UI.selectionField: [ { position: 50 } ]
+  PlannedGoodsIssueDate;
+
+
+  @UI.lineItem: [ { position: 60, criticality: 'GoodsMovementStatusCriticality', criticalityRepresentation: #WITH_ICON } ]
+  @UI.fieldGroup: [{qualifier: 'HDSTATUS', position: 20, criticality: 'GoodsMovementStatusCriticality', criticalityRepresentation: #WITH_ICON } ]
+  @UI.selectionField: [ { position: 60 } ]
+  OverallGoodsMovementStatus;
+    
+}
